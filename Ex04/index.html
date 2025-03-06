@@ -6,6 +6,22 @@
     <title>Imagens Flexíveis</title>
 </head>
 <body>
-    
+    <h2>Vamos apreder a redimencionar as imagens nessa aula.</h2>
+
+    <p>Nesta aula vamos aprender a redimencionar imagens utilizando as tags <mark>"picture" e "Source"</mark>
+        <br>
+        1º Passo > Vamos adicionar a maior imagem e logo após temos que delimitar o tamanho dela para <mark>1050px</mark>.
+        (Significa que o maximo para essa imagem continuar em evidencia é 1050px), Se o valor for menor do que 1050px a imagem é alterada para 
+        imagem <mark>Média</mark>.
+        <br>
+        2º Passo > Repetindo o passo anterior e delimitando a imagem média em 750px, assim que o usuário diminuir a pagina ela aciona rapidamente 
+        a imagem <mark>Pequena</mark>
+
+    </p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="img/imagem_P.png" type = "image/png">
+        <source media="(max-width: 1050px)" srcset="img/imagem_M.png" type = "image/png">
+        <img src="img/imagem_G.png" alt="Teste">
+    </picture>
 </body>
 </html>
